@@ -1,0 +1,25 @@
+swamy@akka-desktop:~/C/06_pointers$ ./006_globalvirtual 
+The address of global variable gi: 0 and its pointer gptr: 0x804a030 is 
+The address of local variable li : -1216683392 and its pointer lptr: 0xbff36440 is 
+The address of mainis 0x80484c4 and printf is 0x80483a0
+The address of hptr is 0x9fb8008
+See the virtual address
+
+swamy@akka-desktop:~/C/06_pointers$ cat /proc/7287/maps
+08048000-08049000 r-xp 00000000 08:07 1308531    /home/swamy/C/06_pointers/006_globalvirtual
+08049000-0804a000 r--p 00000000 08:07 1308531    /home/swamy/C/06_pointers/006_globalvirtual
+0804a000-0804b000 rw-p 00001000 08:07 1308531    /home/swamy/C/06_pointers/006_globalvirtual
+09fb8000-09fde000 rw-p 00000000 00:00 0          [heap]
+b75e1000-b75e2000 rw-p 00000000 00:00 0 
+b75e2000-b7785000 r-xp 00000000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b7785000-b7787000 r--p 001a3000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b7787000-b7788000 rw-p 001a5000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b7788000-b778b000 rw-p 00000000 00:00 0 
+b779a000-b779e000 rw-p 00000000 00:00 0 
+b779e000-b779f000 r-xp 00000000 00:00 0          [vdso]
+b779f000-b77bf000 r-xp 00000000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+b77bf000-b77c0000 r--p 0001f000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+b77c0000-b77c1000 rw-p 00020000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+bff18000-bff39000 rw-p 00000000 00:00 0          [stack]
+swamy@akka-desktop:~/C/06_pointers$ 
+

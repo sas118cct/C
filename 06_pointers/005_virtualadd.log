@@ -1,0 +1,36 @@
+swamy@akka-desktop:~/C/06_pointers$ ./005_virtualadd 
+The address of local var 10 is 0xbfa732d4 and global var 11 is 0x804a01c
+
+The address of local var A is 0xbfa732d8 and global var B is 0x804a020
+
+The address of local var 10.300000 is 0xbfa732e0 and global var 18.299999 is 0x804a024
+
+The address of local var 22.430000 is 0xbfa732e4 and global var 24.400000 is 0x804a028
+
+Address of main is 0x8048464  printf is  0x8048360
+Program to make system wait for input
+
+Type the commands follows
+ps -a
+ cat /proc/PID/status
+ cat /proc/PID/maps
+
+
+swamy@akka-desktop:~/C/06_pointers$ cat /proc/6823/maps
+08048000-08049000 r-xp 00000000 08:07 1308427    /home/swamy/C/06_pointers/005_virtualadd
+08049000-0804a000 r--p 00000000 08:07 1308427    /home/swamy/C/06_pointers/005_virtualadd
+0804a000-0804b000 rw-p 00001000 08:07 1308427    /home/swamy/C/06_pointers/005_virtualadd
+b7620000-b7621000 rw-p 00000000 00:00 0 
+b7621000-b77c4000 r-xp 00000000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b77c4000-b77c6000 r--p 001a3000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b77c6000-b77c7000 rw-p 001a5000 08:05 262210     /lib/i386-linux-gnu/libc-2.15.so
+b77c7000-b77ca000 rw-p 00000000 00:00 0 
+b77d9000-b77dd000 rw-p 00000000 00:00 0 
+b77dd000-b77de000 r-xp 00000000 00:00 0          [vdso]
+b77de000-b77fe000 r-xp 00000000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+b77fe000-b77ff000 r--p 0001f000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+b77ff000-b7800000 rw-p 00020000 08:05 266260     /lib/i386-linux-gnu/ld-2.15.so
+bfa53000-bfa74000 rw-p 00000000 00:00 0          [stack]
+
+
+

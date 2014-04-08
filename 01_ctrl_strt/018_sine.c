@@ -7,6 +7,8 @@ int main()
 	scanf("%d %d", &n,&x);
 	for(i=0,j=0;i<=n;j++,i++){
 		if((i%2)==0){
+		}
+		else{
 		a = pow((-1),j)*pow(x,i);
 		b = i*b;
 		sum = sum +(a/b);

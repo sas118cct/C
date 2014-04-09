@@ -14,20 +14,20 @@ int main()
 	r = strlen(a);
 	n = strlen(b);
 	while(i<=r)
-{
+	{	
 	c[i] = a[i];
 	i++;
-}
+	}
 	s = n+r;
 	o = p+n;
 	for(i=p;i<s;i++)
 	{
 	x[i] = c[i];t =0;
 	if(t<n)
-{
+	{
 	a[i] = b[t];
 	t = t+1;
-}
+	}
 	o = 0;
 	a[o] = x[o];
 	o = 0+1;

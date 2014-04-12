@@ -5,18 +5,39 @@ char gc, *gptr2 = &gc;
 float gf, *gptr3 = &gf;
 double gd, *gptr4 = &gd;
 
+void func(void);
+
 int main()
 {
 	int li, *lptr1 = &li; char lc, *lptr2 = &lc; float lf, *lptr3 = &lf; double ld, *lptr4 = &ld;
-	li = 10; gi = 11; 
-	lc  = 'A'; gc = 'B';
-	lf = 10.3; gf = 18.3;
-	ld = 22.43; gd = 24.4;
-	printf("The address of local var %d is %p and global var %d is %p\n\n", li, &lptr1, gi, &gptr1);
 
-	printf("The address of local var %c is %p and global var %c is %p\n\n", lc, &lptr2, gc, &gptr2);
-	printf("The address of local var %f is %p and global var %f is %p\n\n", lf, &lptr3, gf, &gptr3);
-	printf("The address of local var %f is %p and global var %f is %p\n\n", ld, &lptr4, gd, &gptr4);
+	printf("&gi:%p\n", &gptr1);
+	printf("&gc:%p\n", &gptr2);
+	printf("&gf:%p\n", &gptr3);
+	printf("&gd:%p\n", &gptr4);
+	printf("\n");
+
+	printf("main(): &li:%p\n", &lptr1);
+	printf("main(): &lc:%p\n", &lptr2);
+	printf("main(): &lf:%p\n", &lptr3);
+	printf("main(): &ld:%p\n", &lptr4);
+	printf("\n");
+
+	func();
+
 	return 0;
+}
+
+void func(void)
+{
+	int li, *lptr1 = &li; char lc, *lptr2 = &lc; float lf, *lptr3 = &lf; double ld, *lptr4 = &ld;
+
+	printf("func(): &li:%p\n", &lptr1);
+	printf("func(): &lc:%p\n", &lptr2);
+	printf("func(): &lf:%p\n", &lptr3);
+	printf("func(): &ld:%p\n", &lptr4);
+	printf("\n");
+
+	return;
 }
 

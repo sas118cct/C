@@ -1,0 +1,25 @@
+bash-4.2$ uname -a
+Linux workshop 3.11.10-301.fc20.x86_64 #1 SMP Thu Dec 5 14:01:17 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+bash-4.2$ ./09_sizeof.out 
+sizeof(char):1
+sizeof(int):4
+sizeof(float):4
+sizeof(double):8
+
+
+sizeof(unsigned char):1
+sizeof(signed char):1
+
+sizeof(unsigned int):4
+sizeof(signed int):4
+
+
+sizeof(short int):2
+sizeof(long int):8
+sizeof(long long int):8
+
+
+sizeof(long double):16
+
+
+

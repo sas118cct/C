@@ -3,11 +3,11 @@
 int main()
 {
 	int dg,r,a;
-	printf("Enter the number in degrees");
+	printf("Enter the number in degrees\n");
 	scanf("%d",&dg);
 	a = 3.14/180;
 	r = dg*a;
-	printf("The value in radiants is %d", r);
+	printf("The value in radiants is %d\n", r);
 	return 0;
 }
 

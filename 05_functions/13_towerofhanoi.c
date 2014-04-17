@@ -14,12 +14,12 @@ int main()
 }
 void towers(int num, char frompeg, char topeg, char auxpeg)
 {
-    if (num == 1)
-    {
+    if (num == 1){
+
         printf("\n Move disk 1 from peg %c to peg %c\n", frompeg, topeg);
         return;
     }
     towers(num - 1, frompeg, auxpeg, topeg);
-    printf("\n Move disk %d from peg %c to peg %c", num, frompeg, topeg);
-    towers(num - 1, auxpeg, topeg, frompeg);
+    printf("\n Move disk %d from peg %c to peg %c\n", num, frompeg, topeg);
+    return( towers(num - 1, auxpeg, topeg, frompeg));
 }

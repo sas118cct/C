@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int c,f,a,b;
-	printf("Enter the temperature in centigrade");
-	scanf("%d", &c);
+	float c,f,a,b;
+	printf("Enter the temperature in centigrade\n");
+	scanf("%f", &c);
 	a = (9*c)/5;
 	b = 32;
 	f = a+b;
-	printf("The temperatutre in fareinheit is %d",f);
+	printf("The temperatutre in fareinheit is %f\n",f);
 	return 0;
 }
 

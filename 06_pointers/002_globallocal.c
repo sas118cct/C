@@ -9,7 +9,10 @@ void func(void);
 
 int main()
 {
-	int li, *lptr1 = &li; char lc, *lptr2 = &lc; float lf, *lptr3 = &lf; double ld, *lptr4 = &ld;
+	int li, *lptr1 = &li;
+	char lc, *lptr2 = &lc;
+	float lf, *lptr3 = &lf;
+	double ld, *lptr4 = &ld;
 
 	printf("&gi:%p\n", &gptr1);
 	printf("&gc:%p\n", &gptr2);
@@ -30,7 +33,10 @@ int main()
 
 void func(void)
 {
-	int li, *lptr1 = &li; char lc, *lptr2 = &lc; float lf, *lptr3 = &lf; double ld, *lptr4 = &ld;
+	int li, *lptr1 = &li;
+	char lc, *lptr2 = &lc; 
+	float lf, *lptr3 = &lf; 
+	double ld, *lptr4 = &ld;
 
 	printf("func(): &li:%p\n", &lptr1);
 	printf("func(): &lc:%p\n", &lptr2);

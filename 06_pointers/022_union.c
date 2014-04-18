@@ -9,11 +9,9 @@ union student
  main()
 {
 	union student var;
-	printf("Enter the data\n");
-	scanf("%s %d %f %f", var.name, &var.class, &var.age, &var.weight);
 	printf("Addresses are\n");
-	printf("%p\n", &var);
-	printf("%p\n %p\n %p\n %p\n", &var.name, &var.class, &var.age, &var.weight);
+//	printf(" %p\n", &var);
+	printf(" %p\n %p\n %p\n %p\n", &var.name, &var.class, &var.age, &var.weight);
 
 }
 
